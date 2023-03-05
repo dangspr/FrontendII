@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
 
 * {
-  margin: 0;
-  padding: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .dark {
@@ -11,7 +9,7 @@
 }
 
 h1 {
-  padding: .5em 1em;
+  padding: 0.5em 1em;
   background-color: white;
   border-bottom: 1px solid lightgrey;
   color: grey;
@@ -23,6 +21,7 @@ h1 {
   justify-content: space-between;
   width: 80%;
   margin: 2em 10%;
+  justify-content: center ;
 }
 
 .item {
@@ -41,13 +40,13 @@ h1 {
 
 .item h2 {
   font-size: 1em;
-  margin-bottom: .2em;
+  margin-bottom: 0.2em;
 }
 
 .bgDarkMode {
   background-color: rgb(39, 39, 39);
 }
-.titleDarkMode { 
+.titleDarkMode {
   background-color: rgb(19, 19, 19);
   color: rgb(170, 170, 170);
   border-color: black;
@@ -58,4 +57,52 @@ h1 {
 }
 .textDarkMode {
   color: rgb(230, 230, 230);
+}
+
+.textDarkModeh2 {
+  color: rgb(230, 230, 230);
+}
+
+/* button */
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  width: 39px;
+  height: 14px;
+  background-color: #111;
+  display: flex;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  transform: scale(1.6);
+}
+
+.ball {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+/*  target the elemenent after the label*/
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}
+
+.fa-moon {
+  color: #f1c40f;
+}
+
+.fa-sun {
+  color: #f39c12;
 }
