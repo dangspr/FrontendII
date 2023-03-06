@@ -1,3 +1,28 @@
+//mesa 06 
+let contantRef = document.querySelector('#contantRef');
+
+let felinos = [
+  {
+    titulo: 'O Leão',
+    descricao: `O leão (Panthera leo) é um mamífero carnívoro da família dos felinos é uma das cinco espécies do gênero
+    gênero Panthera. Os leões selvagens vivem em populações cada vez mais dispersas e fragmentadas na África
+    subsahariana
+    (com exceção das regiões florestais e das regiões de selva da Bacia do Congo) e uma pequena área do noroeste da
+    Índia.`,
+    url: './imagens/leon.jpg'
+  },
+  
+]
+for (let felino of felinos) {
+  contantRef.innerHTML += `
+    <div class="item">
+      <img src="${felino.url}">
+      <h2>${felino.titulo}</h2>
+      <p>${felino.descricao}</p>
+    </div>
+  `
+}
+
 let bodyRef = document.querySelector('body');
 let h1Ref = document.querySelector('h1');
 let itemRef = document.querySelector('.item')
@@ -53,27 +78,3 @@ function blabckMode() {
   mudaTodosH2();
 }
 
-//mesa 06 
-let contantRef = document.querySelector('#contantRef');
-
-let felinos = [
-  {
-    titulo: 'O Leão',
-    descricao: `O leão (Panthera leo) é um mamífero carnívoro da família dos felinos é uma das cinco espécies do gênero
-    gênero Panthera. Os leões selvagens vivem em populações cada vez mais dispersas e fragmentadas na África
-    subsahariana
-    (com exceção das regiões florestais e das regiões de selva da Bacia do Congo) e uma pequena área do noroeste da
-    Índia.`,
-    url: './imagens/leon.jpg'
-  },
-  
-]
-for (let felino of felinos) {
-  contantRef.innerHTML += `
-    <div class="item">
-      <img src="${felino.url}">
-      <h2>${felino.titulo}</h2>
-      <p>${felino.descricao}</p>
-    </div>
-  `
-}
