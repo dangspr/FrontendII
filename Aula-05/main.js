@@ -58,7 +58,7 @@ let contantRef = document.querySelector('#contantRef');
 
 let felinos = [
   {
-    titulo: 'O leão',
+    titulo: 'O Leão',
     descricao: `O leão (Panthera leo) é um mamífero carnívoro da família dos felinos é uma das cinco espécies do gênero
     gênero Panthera. Os leões selvagens vivem em populações cada vez mais dispersas e fragmentadas na África
     subsahariana
